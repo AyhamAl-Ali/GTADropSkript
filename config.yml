@@ -1,0 +1,50 @@
+messages:
+  prefix: "&8[&6&lDrop&8]"
+  loot-received: "%prefix% &aYou have successfully captured the crate and got the loot."
+  dropping: " %nl%%prefix% &6Dropping a crate of tier &f%tier% &6at &f%location%%nl% "
+  timer-paused: "%prefix% &cCrate timer paused. You must kill others near the crate for the timer to continue."
+  capturing: "%prefix% &6Capturing the crate &7(&e&l%time%&7)"  
+
+settings:
+  drop-hologram: "&c&lCrate &f&l%tier% &c&lis self-destruting in &a&l%time%"
+  
+  # Use Skript itemtype syntax
+  # See http://skriptlang.github.io/Skript/classes.html#itemtype
+  # Note: don't use multi text lores like this "lore1" and "lore2" instead use newline expr like this "lore1%nl%lore2"
+  # To add names to items use 'named %text%' like this '1 of stone named "name"'
+  # To add lore to items use 'with lore %text%' like this '1 of stone with lore "lore1"'
+  tier-3:
+    time: 160
+    rewards:
+      - 1 of stone named "test" with lore "1"
+      - 1 of diamond sword of sharpness 1 named "&aa"
+      
+  tier-2:
+    time: 120
+    rewards:
+      - 1 of stone named "test" with lore "1"
+      - 1 of diamond sword of sharpness 1 named "&aa"
+      
+  tier-1:
+    time: 5
+    rewards:
+      - 1 of stone named "test" with lore "1"
+      - 1 of diamond sword of sharpness 1 named "&aa"
+
+  
+  no-players-left-reset-time: 5 # in seconds
+  no-players-left-reset-title: "&c&lRESETTING IN &e&l%time%"
+
+  drop-every: 1200 # in seconds - dwefault 20 minutes
+  drop-default-tier: "random" # Tier of drop in the automated event. Values: 1, 2, 3 or random
+
+  drop-amount: 3 # how many drops to drop when the time reaches - default 3
+
+  drop-expire-after: 900 # in seconds - default 15 minutes
+  drop-expiring-title: "&4&lDrop expiring in &f&l%time%"
+
+  particles-type: "redstone" # explosion, explosionlarge, explosionhuge, fireworkspark, waterbubble, watersplash, waterwake, suspended, suspenddepth, crit, critmagic, smoke, smokelarge, spell, spellinstant, mobspell, mobspellambient, witchspell, waterdrip, lavadrip, angryvillager, happyvillager, townaura, note, portal, enchantmenttable, flame, lava, footstep, cloud, redstone, snowball, snowshovel, slime, heart, barrier, itemcrack, blockcrack, blockdust, waterdrop, itemtake, mobappearance, dragonbreath - 1.9 only, endrod - 1.9 only, damage - 1.9 only, sweep - 1.9 only
+  particles-style: 1 # Styles 1, 2, 3, 4, 5
+  particles-density: 50 # Density of particles
+  particles-visible-range: 25 # In blocks
+
