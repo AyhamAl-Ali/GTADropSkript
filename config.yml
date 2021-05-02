@@ -38,7 +38,11 @@ settings:
   drop-every: 1200 # in seconds - dwefault 20 minutes
   drop-default-tier: "random" # Tier of drop in the automated event. Values: 1, 2, 3 or random
 
-  drop-amount: 3 # how many drops to drop when the time reaches - default 3
+  timer-random: true # this will set the timer to random between min and max and disable drop-every
+  timer-random-min: 3600 # in seconds
+  timer-random-max: 86400 # in seconds
+
+  drop-amount: 1 # how many drops to drop when the time reaches - default 3
 
   drop-expire-after: 900 # in seconds - default 15 minutes
   drop-expiring-title: "&4&lDrop expiring in &f&l%time%"
