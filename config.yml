@@ -47,4 +47,11 @@ settings:
   particles-style: 1 # Styles 1, 2, 3, 4, 5
   particles-density: 50 # Density of particles
   particles-visible-range: 25 # In blocks
+  particles-rainbow: false # works only on some particles such as redstone
+  particles-color: false # if rainbow is false this will be chosen
 
+  players-glowing: true # Make players that are inside the drop field glow
+  drop-glowing: true # Make drop glow when spawned
+  drop-glowing-time: 10 seconds # set to 1 day for infinity glowing until captured
+
+  push-player-on-click: true
