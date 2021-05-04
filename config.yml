@@ -26,7 +26,7 @@ settings:
       - 1 of diamond sword of sharpness 1 named "&aa"
       
   tier-1:
-    time: 80
+    time: 5
     rewards:
       - 1 of stone named "test" with lore "1"
       - 1 of diamond sword of sharpness 1 named "&aa"
@@ -38,11 +38,7 @@ settings:
   drop-every: 1200 # in seconds - dwefault 20 minutes
   drop-default-tier: "random" # Tier of drop in the automated event. Values: 1, 2, 3 or random
 
-  timer-random: true # this will set the timer to random between min and max and disable drop-every
-  timer-random-min: 3600 # in seconds
-  timer-random-max: 86400 # in seconds
-
-  drop-amount: 1 # how many drops to drop when the time reaches - default 3
+  drop-amount: 3 # how many drops to drop when the time reaches - default 3
 
   drop-expire-after: 900 # in seconds - default 15 minutes
   drop-expiring-title: "&4&lDrop expiring in &f&l%time%"
@@ -55,7 +51,9 @@ settings:
   particles-color: false # if rainbow is false this will be chosen
 
   players-glowing: true # Make players that are inside the drop field glow
-  drop-glowing: true # Make drop glow when spawned
+  drop-glowing: false # Make drop glow when spawned
   drop-glowing-time: 10 seconds # set to 1 day for infinity glowing until captured
 
   push-player-on-click: true
+
+  firework-time: 5 # In seconds
